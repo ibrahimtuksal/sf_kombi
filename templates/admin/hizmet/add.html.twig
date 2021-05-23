@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Yönetim Paneli{% endblock %}
+
+{% block body %}
+    {% include 'admin/header.html.twig' %}
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-5">
+                {{ form(hizmetForm) }}
+            </div>
+        </div>
+    </div>
+{% endblock %}

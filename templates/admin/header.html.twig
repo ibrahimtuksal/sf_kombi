@@ -1,0 +1,28 @@
+<div class="container pt-5">
+    <div class="row justify-content-md-center">
+        <div class="col-md-8 text-center">
+            <p class="display-4"><a href="{{ path('admin') }}" class="text-dark" style="text-decoration: none;">Yönetim Paneli</a></p>
+            <p class="h4">{{ app.user.fullname }}</p>
+            <a href="{{ path('app_logout') }}" class="btn btn-danger"><i class="fas fa-power-off"></i></a>
+            <hr>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-md-2 mb-3">
+            <div class="dropdown d-grid gap-2">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-cog"></i> Genel Ayarlar
+                </button>
+                <ul class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="">Genel Ayarlar <i class="fas fa-cog"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-2 d-grid gap-2 mb-3">
+            <a href="" class="btn btn-dark">Hizmetler <i class="fas fa-bars"></i></a>
+        </div>
+    </div>
+</div>
